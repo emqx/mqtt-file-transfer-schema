@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "name": {
-      "description": "File name",
+      "description": "A descriptive name for display",
       "type": "string"
     },
     "size": {
@@ -18,8 +18,10 @@
                       After this point in time broker can delete the file.",
       "type": "integer"
     },
-    "segment_ttl": {
-      "description": "Time-to-leave (in seconds) for segments of incomplete file transfer.
+    "segments_ttl": {
+      "description": "Time-to-live (in seconds) for segments of incomplete file transfer.
+                      The deadline of for broker to collect all segments is calculated from InitTime + TTL,
+                      where InitTime is the time when broker receives the init message.
                       Broker will garbage collect segments of unfinished transfers when
                       this time expires. If not set, broker will use its own default value.",
       "type": "integer"
