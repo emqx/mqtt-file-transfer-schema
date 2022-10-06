@@ -14,16 +14,11 @@
       "type": "integer"
     },
     "expire_at": {
-      "description": "File expiration time as UNIX Epoch.
-                      After this point in time broker can delete the file.",
+      "description": "File expiration time as UNIX Epoch. After this point in time broker can delete the file.",
       "type": "integer"
     },
     "segments_ttl": {
-      "description": "Time-to-live (in seconds) for segments of incomplete file transfer.
-                      The deadline of for broker to collect all segments is calculated from InitTime + TTL,
-                      where InitTime is the time when broker receives the init message.
-                      Broker will garbage collect segments of unfinished transfers when
-                      this time expires. If not set, broker will use its own default value.",
+      "description": "Time-to-live (in seconds) for segments of incomplete file transfer. The deadline of for broker to collect all segments is calculated from InitTime + TTL, where InitTime is the time when broker receives the init message. Broker will garbage collect segments of unfinished transfers when this time expires. If not set, broker will use its own default value.",
       "type": "integer"
     },
     "user_data": {
