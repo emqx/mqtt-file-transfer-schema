@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/emqx/mqtt-file-transfer-schema/blob/v1.0.0/init.json",
+  "$id": "https://github.com/emqx/mqtt-file-transfer-schema/blob/v1.1.0/init.json",
   "title": "init",
   "description": "Schema for payload of the init message",
   "type": "object",
